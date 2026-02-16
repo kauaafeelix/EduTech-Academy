@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduTech - Home</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>   
      <script>
     tailwind.config = {
         theme: {
         extend: {
             fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'],
             'inter': ['Inter', 'sans-serif'],
             'roboto': ['Roboto', 'sans-serif'],
             'custom': ['Inter', 'Roboto', 'Arial', 'sans-serif']
@@ -19,7 +23,26 @@
     }
     </script>
 </head>
-<body>
+<body class="bg-white">
+    <header id="header" class="flex flex-col ">
+        <div id="titulo-menu" class="flex flex-row justify-between items-center p-3">
+            <div class="flex flex-row items-center gap-2">
+                <img src="images_prova/logo.svg" alt="svg da logo">
+                <h2 class="font-poppins font-bold text-blue-600/90 text-xl">EduTech Academy </h2>
+            </div>
+            <div>
+                <img src="images_prova/menu.svg" alt="menu hamburger" class="filter brightness-0">
+            </div>
+        </div>
+        <hr class="border-t-2 border-gray-300/40 my-1 ">
+    </header>
+    
+    <section id = "cursos" class="mt-6 flex justify-center">
+        <div class="flex flex-col justify-center gap-4 items-center max-w-4xl w-full px-4">
+            <h1 class="justify-center text-3xl font-bold font-poppins text-center">Construa Seu Futuro com a EduTech Academy</h1>
+            <p class="text-lg text-center font-inter font-medium text-gray-500">Cursos de alta qualidade para impulsionar sua carreira e transformar sua vida profissional.</p>
+        </div>
+    </section>
     
 </body>
 </html>
